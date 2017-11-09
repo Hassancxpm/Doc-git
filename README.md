@@ -1,4 +1,4 @@
-# Documentaiton Git Module Ezpublish
+# Documentation Git Module Ezpublish
 
 Site web de la documentation Cxpm du module Git pour Ezpublish CXPM
 
