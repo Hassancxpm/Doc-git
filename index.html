@@ -142,13 +142,13 @@
   </section>
   <section id="sec-4">
     <h1>KLOUDSPEAKER TO GIT</h1>
-    <p class="gras">Dans tous les cas, n'ayant pas la main actuellement sur le siteaccess du CMS, nous devons passer par Kaliop pour switcher de KS vers GIT.</p>
-    <p>Cela dit, pour passer vers GIT un thème qui est actuellement mis à jour via Kloudspeaker, deux méthodes sont possibles :</p>
+    <p class="gras">Ayant maintenant la main sur le siteaccess du CMS, nous pouvons modifier directement le thème pour switcher de KS vers GIT grâce à l'objet Ez "configuration du siteaccess".</p>
+    <p>Cela dit, pour passer vers GIT un site qui est actuellement mis à jour via Kloudspeaker, deux méthodes sont possibles :</p>
     <p>
       <ul>
         <li>Passer par Kloudspeaker pour supprimer le répertoire (il est conseillé de faire une copie de sauvegarde avant) et créer ensuite le thème git avec le même nom</li>
-        <li>Créer un thème git avec un "Nom du thème pour la config" différent du nom du thème en place + modifier la config du siteaccess pour utiliser le nouveau nom<br /><br />
-          <span class="italic">Exemple : le thème foire_de_paris est en place et est mis à jour via Kloudspeaker.<br /> Je veux le passer sur git.<br /> Je crée un dépôt, récupère les fichiers du thème en place et les commit sur le dépôt. Ensuite, je crée un objet "thème git" dans le backoffice et je lui mets comme nom "foire_de_paris_git" (ou "foire_de_paris_2018", il faut simplement qu'il soit différent du premier). Une fois l'ajout effectué, je modifie la config du siteaccess (Pour le moment, il faudra passer par un ticket Jira) pour enfin utiliser le nouveau nom du thème</span>
+        <li>Créer un thème git avec un nom de thème différent du nom du thème en place + modifier la config du siteaccess pour utiliser le nouveau nom<br /><br />
+          <span class="italic">Exemple : le thème foire_de_paris est en place et est mis à jour via Kloudspeaker.<br /> Je veux le passer sur git.<br /> Je crée un dépôt, récupère les fichiers du thème en place et les commit sur le dépôt. Ensuite, je crée un objet "thème git" dans le backoffice et je lui mets comme nom "foire_de_paris_git" (ou "foire_de_paris_2018", il faut simplement qu'il soit différent du premier). Une fois l'ajout effectué, je modifie la config du siteaccess pour enfin utiliser le nouveau nom du thème</span>
         </li>
       </ul>
     </p>
@@ -162,7 +162,7 @@
               <label for="home2">Est-il possible de créer des branches et de les pousser en prod ?</label>
               <input type="radio" checked="true" name="verticalMenu2" id="home2" />
               <div>
-                <p>Les prestataires pourront créer autant de branches qu'ils veulent et faire tous les commits qu'ils veulent, mais quand sera venu le moment de pousser en prod, il faudra tout merge sur le master. C'est une mécanique commune avec l'utilisation de GIT</p>
+                <p>Les prestataires pourront créer autant de branches qu'ils veulent et faire tous les commits qu'ils veulent, mais quand sera venu le moment de pousser en prod, il faudra tout merger sur le master. C'est une mécanique commune avec l'utilisation de GIT</p>
               </div>
             </li>
             <li>
@@ -179,8 +179,8 @@
                 <p> Il existe 3 sources pour récupérer les thèmes :
                 <ul>
                   <li>Kloudspeaker qui écrit directement sur le serveur, comme actuellement</li>
-                  <li>L'outil de versionning que nous mettrons à disposition des prestataires qui veulent utiliser GIT, mais qui n'ont pas leur serveur pour le gérer.</li>
-                  <li>L'outil de versionning des prestataires qui en ont un, ce qui n'a aucun rapport avec le nôtre. Pour se connecter à chacun, il nous faudra un utilisateur et un mot de passe en plus de l'URL.</li>
+                  <li>L'outil de versionning (Github) que nous mettrons à disposition des prestataires qui veulent utiliser GIT, mais qui n'ont pas leur serveur pour le gérer.</li>
+                  <li>L'outil de versionning des prestataires qui en ont un (Github), ce qui n'a aucun rapport avec le nôtre. Pour se connecter à chacun, il nous faudra un utilisateur et un mot de passe en plus de l'URL.</li>
                 </ul>
               </p>
               </div>
@@ -196,12 +196,12 @@
               <label for="work4">Si un site utilise déjà des fichier sur Kloudspeaker, et que nous voulons switcher sur un GIT ?</label>
               <input type="radio" name="verticalMenu2" id="work4" />
               <div>
-                <p class="gras">Dans tous les cas, n'ayant pas la main actuellement sur le siteaccess du CMS, nous devons passer par Kaliop pour switcher de KS vers GIT.</p>
-                <p>Ceci étant dit, pour passer d'un dossier Kloudspeaker à un dépôt GIT, deux choix sont possibles :
+                <p class="gras">Ayant maintenant la main sur le siteaccess du CMS, nous pouvons directement éditer la configuration siteaccess dans le CMS pour switcher de KS vers GIT.</p>
+                <p>Ceci étant dit, pour passer de Kloudspeaker à GIT, deux choix sont possibles :
                   <ul>
                     <li>Passer par Kloudspeaker pour supprimer le répertoire (il est vivement conseillé de faire une copie de sauvegarde avant) et créer ensuite le thème git avec le même nom</li>
-                    <li>Créer un thème git avec un "Nom du thème pour la config" différent du nom du thème en place et <span class="gras">modifier la config du siteaccess (ce qui suppose que nous avons la main dessus, ce qui n'est pas le cas à l'heure actuelle)</span> pour utiliser le nouveau nom.<br /><br />
-                      <span class="italic">Exemple : le thème foire_de_paris est en place et est mis à jour via Kloudspeaker. Je veux le passer sur git. Je crée un dépôt, récupère les fichiers du thème en place et les commit sur le dépôt. Ensuite, je crée un objet "thème git" dans le backoffice et je lui mets comme nom "foire_de_paris_git" (ou "foire_de_paris_2018", il faut simplement qu'il soit différent du premier). Une fois l'ajout effectué, je modifie la config du siteaccess (via un ticket Jira pour le moment) pour utiliser le nouveau nom du thème</span><br /><br />
+                    <li>Créer un thème git avec un nom de thème différent du nom du thème en place et <span class="gras">modifier la config du siteaccess</span> pour utiliser le nouveau nom.<br /><br />
+                      <span class="italic">Exemple : le thème foire_de_paris est en place et est mis à jour via Kloudspeaker. Je veux le passer sur git. Je crée un dépôt, récupère les fichiers du thème en place et les commit sur le dépôt. Ensuite, je crée un objet "thème git" dans le backoffice et je lui mets comme nom "foire_de_paris_git" (ou "foire_de_paris_2018", il faut simplement qu'il soit différent du premier). Une fois l'ajout effectué, je modifie la config du siteaccess dans le CMS pour utiliser le nouveau nom du thème</span><br /><br />
                     </li>
                   </ul>
                 </p>
@@ -211,7 +211,7 @@
               <label for="work5">Y a-t-il d'autres différences entre KloudSpeaker et GIT ?</label>
               <input type="radio" name="verticalMenu2" id="work5" />
               <div>
-                <p>Les thèmes GIT se greffent aux thèmes Kloudspeaker. Une fois les fichiers déposés sur le serveur, tout fonctionne exactement de la même manière. Dans tous les cas, il faut passer par le générateur de sites pour affecter un thème à un site.</p>
+                <p>Les thèmes GIT se greffent aux thèmes Kloudspeaker. Une fois les fichiers déposés sur le serveur, tout fonctionne exactement de la même manière. Dans tous les cas, il faut passer par le générateur de sites ou modifier la configuration siteaccess pour affecter un thème à un site.</p>
                 <p>Le fonctionnement de nos sites parait parfois complexe, voici comment tout fonctionne :</p>
                 <p>Les proxy (Varnish, Cloudflare) ont un délai de conservation de 5min<br />
                 Les navigateurs ont un délai de conservation d'une journée.<br />
