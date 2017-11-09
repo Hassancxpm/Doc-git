@@ -2,7 +2,9 @@
 
 Site web de la documentation Cxpm du module Git pour Ezpublish CXPM
 
-## Let's Go !
+https://doc-git.comexposium.fr/
+
+## Introduction
 
 Notre CMS intègre désormais la fonctionnalité permettant d’utiliser GIT pour gérer les thèmes. Cette fonctionnalité vient s’ajouter à la gestion déjà existante qui se base sur des répertoires et des fichiers administrés via l’outil Kloudspeaker.
 
@@ -10,7 +12,7 @@ Un site pourra donc utiliser soit KloudSpeaker, soit GIT.
 
 ### URL
 
-https://doc-git.comexposium.fr/
+Pour lire la documentation, c'est par ici : https://doc-git.comexposium.fr/
 
 ## Contribuer
 
