@@ -189,7 +189,9 @@
               <label for="work3">Comment se passe la mise à jour des ressources au niveau du cache cloudflare ?</label>
               <input type="radio" name="verticalMenu2" id="work3" />
               <div>
-                <p>Le traitement est exactement le même qu'actuellement. Il faut voir la possibilité d'utiliser GIT comme un raccourci à Kloudspeaker. Au final, le résultat est exactement le même : pour le cache navigateur, c'est géré via un header ETag ; pour Cloudflare, un appel est fait à leur API quand une modification est détectée.</p>
+                <p>Le traitement est exactement le même qu'actuellement. Il faut voir la possibilité d'utiliser GIT comme un raccourci à Kloudspeaker. Au final, le résultat est exactement le même : pour le cache navigateur, c'est géré via un header ETag ; pour Cloudflare, un appel est fait à leur API quand une modification est détectée.<br /><br />
+                   Si l'URL du dépôt change, le fait de mettre à jour l'objet Ez "Thème GIT" ne fonctionnera pas pour des raisons de sécurité. Il faudra supprimer l'objet et en refaire un avec la nouvelle URL du dépôt.
+                </p>
               </div>
             </li>
             <li>
