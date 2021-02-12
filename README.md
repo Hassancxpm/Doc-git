@@ -16,6 +16,6 @@ Pour lire la documentation, c'est par ici : https://doc-git.comexposium.fr/
 
 Libre à vous de forker le repo et de proposer vos pull requests. Elle seront les bienvenues.
 
-## Autheur
+## Auteur
 
 * **Hassan Akaou** - *Comexposium* - [Comexposium](https://www.comexposium.fr)
